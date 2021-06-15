@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Multi-Player Game Page</title>
+</head>
+
+<body>
+    <div id="blur">
+        <h1>
+            <i class="fa fa-cogs" aria-hidden="true" style="font-size: 20px;" onclick="setting()">Change Mode</i></i>
+            <center>Tic Tac Toe</center>
+            <i class="fa fa-arrow-left" aria-hidden="true" style="font-size: 20px;" onclick="back()">Back</i>
+        </h1>
+        <h3></h3>
+        <div class="score">
+            <span id="player1"></span>
+            <span id="player2"></span>
+        </div>
+        <br>
+        <div class="upper">
+            <div class="contain">
+                <div id="1" class="row"></div>
+                <div id="2" class="row"></div>
+                <div id="3" class="row"></div>
+                <div id="4" class="row"></div>
+                <div id="5" class="row"></div>
+                <div id="6" class="row"></div>
+                <div id="7" class="row"></div>
+                <div id="8" class="row"></div>
+                <div id="9" class="row"></div>
+            </div>
+        </div>
+
+        <div class="btns">
+            <button onclick="continues()">Continue</button>
+            <button onclick="restrat()">Restrat</button>
+        </div>
+    </div>
+    <div id="win">
+        <div class="winingbox">
+            <label>Congratulations!</label>
+            <label id="winingname"></label>
+            <label>You Won this Match</label>
+        </div>
+    </div>
+    <div id="draw">
+        <div class="winingbox">
+            <label>.....................</label>
+            <label>$$  DRAW  $$</label>
+            <label>.....................</label>
+        </div>
+    </div>
+    <script src="../JavaScripts/script.js"></script>
+</body>
+
+</html>

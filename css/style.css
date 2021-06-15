@@ -1,0 +1,114 @@
+h1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+i {
+    cursor: pointer;
+}
+
+i:hover {
+    color: blue;
+}
+
+.upper {
+    align-items: center;
+}
+
+.contain {
+    border: 1px solid;
+    width: 354px;
+    height: 354px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    border: 1px solid;
+    width: 116px;
+    height: 116px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px
+}
+
+.row:hover {
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 22px;
+    color: black;
+    text-align: center;
+    font-style: oblique;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+button {
+    margin: 0px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    background-color: lightseagreen;
+    padding: 5px;
+}
+
+button:hover {
+    color: white;
+    background-color: blueviolet;
+}
+
+.score {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.darkmode {
+    background-color: black;
+    color: yellow;
+}
+
+#win,
+#draw {
+    display: none;
+}
+
+.winingbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background-color: black;
+    width: 500px;
+    height: 170px;
+    box-shadow: 1px 3px 10px 2px yellow;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    color: yellow;
+    letter-spacing: 2px;
+}
+
+#winingname {
+    text-transform: uppercase;
+}
