@@ -138,14 +138,20 @@ function back() {
 
 }
 
+sessionStorage.setItem('mode', 'white');
+
+
 function setting() {
+    var Dmode = sessionStorage.getItem('mode');
     var mode = document.getElementsByTagName('body')[0];
-    if (mode.style.color == 'yellow') {
+    if (Dmode == 'dark') {
         mode.style.backgroundColor = 'white';
         mode.style.color = 'black';
+        sessionStorage.setItem('mode', 'white');
 
     } else {
         mode.style.backgroundColor = 'black';
         mode.style.color = 'yellow';
+        sessionStorage.setItem('mode', 'dark')
     }
 }

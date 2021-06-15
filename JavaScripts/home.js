@@ -1,7 +1,3 @@
-function com() {
-    location.href = '../htmls/ai.html';
-}
-
 function mul() {
     var y = document.getElementById('main');
     y.style.filter = 'blur(2px)';
